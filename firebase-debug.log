@@ -1,0 +1,20 @@
+[debug] [2024-08-04T17:40:16.861Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T17:40:16.864Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Accordino\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-04T17:40:16.864Z] CLI Version:   13.15.0
+[debug] [2024-08-04T17:40:16.864Z] Platform:      win32
+[debug] [2024-08-04T17:40:16.864Z] Node Version:  v22.4.1
+[debug] [2024-08-04T17:40:16.865Z] Time:          Sun Aug 04 2024 19:40:16 GMT+0200 (Ora legale dell’Europa centrale)
+[debug] [2024-08-04T17:40:16.865Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T17:40:16.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T17:40:16.926Z] > authorizing via signed-in user (prof.accordino@gmail.com)
+[debug] [2024-08-04T17:40:16.926Z] [iam] checking project quizaccordino-8ef8c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-04T17:40:16.927Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/quizaccordino-8ef8c:testIamPermissions [none]
+[debug] [2024-08-04T17:40:16.927Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/quizaccordino-8ef8c:testIamPermissions x-goog-quota-user=projects/quizaccordino-8ef8c
+[debug] [2024-08-04T17:40:16.927Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/quizaccordino-8ef8c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T17:40:17.773Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/quizaccordino-8ef8c:testIamPermissions 200
+[debug] [2024-08-04T17:40:17.773Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/quizaccordino-8ef8c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-04T17:40:17.774Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/quizaccordino-8ef8c [none]
+[debug] [2024-08-04T17:40:18.093Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/quizaccordino-8ef8c 200
+[debug] [2024-08-04T17:40:18.093Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/quizaccordino-8ef8c {"projectId":"quizaccordino-8ef8c","projectNumber":"823797696737","displayName":"QuizAccordino","name":"projects/quizaccordino-8ef8c","resources":{"hostingSite":"quizaccordino-8ef8c"},"state":"ACTIVE","etag":"1_aced05e3-87e4-407b-8c96-7470f4c3d1e3"}
+[debug] [2024-08-04T17:40:20.154Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/quizaccordino-8ef8c/sites pageToken=&pageSize=10
